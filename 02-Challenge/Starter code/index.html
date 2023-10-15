@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Secondary navigation">
+            <div class="scores">
+                <!-- A direct link to view high scores might enhance user navigation -->
+                <a href="highscores.html" aria-label="View high scores">View Highscores</a>
+            </div>
+            <div class="timer" aria-live="assertive">
+                <!-- Timer value updates might need immediate user attention -->
+                Time: <span id="time">0</span>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper" role="main">
+        <section id="start-screen" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                <!-- Placeholder for start screen text -->
+            </p>
+            <!-- Button to start the quiz -->
+            <button id="start" aria-label="Start the quiz">Start Quiz</button>
+        </section>
+
+        <!-- Section for displaying quiz questions and choices -->
+        <section id="questions" class="hide" aria-live="polite">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </section>
+
+        <!-- Section for end screen and score submission -->
+        <section id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+                Enter initials: 
+                <!-- Restricted input length for initials -->
+                <input type="text" id="initials" maxlength="3" />
+                <!-- Button to submit the score -->
+                <button id="submit" aria-label="Submit your score">Submit</button>
+            </p>
+        </section>
+
+        <!-- Feedback section for providing real-time responses to user actions -->
+        <div id="feedback" class="feedback hide" aria-live="polite"></div>
+    </main>
+    <!-- Link to the script files for quiz questions and logic -->
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+</body>
+</html>

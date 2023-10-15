@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Highscores</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <main class="wrapper" role="main">
+        <h1>Highscores</h1>
+
+        <!-- Ordered list to display the high scores in order -->
+        <ol id="highscores"></ol>
+
+        <nav aria-label="Highscore navigation">
+            <!-- Link to go back to the main quiz page -->
+            <a href="index.html" aria-label="Return to the quiz">
+                <button>Go Back</button>
+            </a>
+            <!-- Button to clear all highscores -->
+            <button id="clear" aria-label="Clear all highscores">Clear Highscores</button>
+        </nav>
+    </main>
+
+    <!-- Link to the JavaScript file to handle scores -->
+    <script src="./assets/js/scores.js"></script>
+</body>
+
+</html>
